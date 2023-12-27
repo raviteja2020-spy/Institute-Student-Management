@@ -7,9 +7,11 @@
     <title>Home Users</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">EduBridge</a>
+        <h1 class="navbar-brand logo" href="#">
+          <span class="logo-start">Edu</span><u>Bridge</u>
+        </h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,9 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/"
-                >Dashboard</a
+              <button
+                class="nav-link active bg-danger btn text-secondary"
+                aria-current="page"
+                href="/"
               >
+                Dashboard
+              </button>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/add">Add User</a>
@@ -36,23 +42,26 @@
       </div>
     </nav>
     <!--Main Content-->
-    <div class="mt-5 portal">
+    <div class="portal">
       <h1 class="text-center">Students List</h1>
-      <div class="container">
+      <div class="container main-card">
         <!--Add User Button-->
         <div class="my-3">
           <a href="/add"
             ><button type="button" class="btn btn-primary">Add User</button></a
           >
         </div>
-        <table class="table border">
+        <table class="table table-cls">
           <thead>
-            <tr>
+            <tr class="table-info">
               <th scope="col">ID</th>
               <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Phone Number</th>
               <th scope="col">Address</th>
+              <th scope="col">Course</th>
+              <th scope="col">Enrollement No</th>
+              <th scope="col">Batch</th>
               <th scope="col">Options</th>
             </tr>
           </thead>
@@ -63,6 +72,9 @@
               <td>{{ user.email }}</td>
               <td>{{ user.pNo }}</td>
               <td>{{ user.address }}</td>
+              <td>{{ user.course }}</td>
+              <td>{{ user.enrollementNo }}</td>
+              <td>{{ user.batch }}</td>
               <td>
                 <div class="d-inline mx-2">
                   <button

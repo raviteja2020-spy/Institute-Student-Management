@@ -3,14 +3,14 @@ package com.example.inventory_backend.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="user_table")
+@Table(name = "user_table")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //Name , Email , pNo, Address
+    // Name , Email , pNo, Address
 
     public String getName() {
         return name;
@@ -52,6 +52,36 @@ public class User {
 
     private String address;
 
+    private String course;
+
+    private String enrollementNo;
+
+    private String batch;
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public String getEnrollementNo() {
+        return enrollementNo;
+    }
+
+    public void setEnrollementNo(String enrollementNo) {
+        this.enrollementNo = enrollementNo;
+    }
+
+    public String getBatch() {
+        return batch;
+    }
+
+    public void setBatch(String batch) {
+        this.batch = batch;
+    }
+
     public Long getId() {
         return id;
     }
@@ -59,7 +89,5 @@ public class User {
     public void setId(Long id) {
         this.id = id;
     }
-
-
 
 }

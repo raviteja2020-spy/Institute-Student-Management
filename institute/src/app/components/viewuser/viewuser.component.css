@@ -2,7 +2,22 @@
   color: black;
   font-size: 30px;
 }
+.logo-start {
+  color: rgb(71, 68, 63);
+}
 .portal {
-  background-color: yellow;
-  height: 100%;
+  background-color: rgb(146, 209, 224);
+  height: 100vh;
+}
+.table-cls {
+  width: 90vw;
+  margin-left: 0px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.main-card {
+  margin-left: 50px;
+}
+.t-head {
+  border-color: brown;
 }

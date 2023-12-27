@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
@@ -39,6 +39,9 @@ public class UserServiceImpl implements UserService{
         user1.setEmail(user.getEmail());
         user1.setpNo(user.getpNo());
         user1.setAddress(user.getAddress());
+        user1.setCourse(user.getCourse());
+        user1.setEnrollementNo(user.getEnrollementNo());
+        user1.setBatch(user.getBatch());
         return userRepository.save(user1);
     }
 }

@@ -17,6 +17,9 @@ export class AdduserComponent implements OnInit {
     email: new FormControl('', [Validators.required]),
     pNo: new FormControl('', [Validators.required]),
     address: new FormControl('', [Validators.required]),
+    course: new FormControl('', [Validators.required]),
+    enrollementNo: new FormControl('', [Validators.required]),
+    batch: new FormControl('', [Validators.required]),
   });
   ngOnInit(): void {}
   submit() {
